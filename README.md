@@ -1,194 +1,166 @@
 <div align="center">
 
-# Mustafa Mohamed Anwar
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=220&section=header&text=Mustafa%20Mohamed%20Anwar&fontSize=42&fontAlignY=38&animation=fadeIn&desc=Full-Stack%20.NET%20Developer&descAlignY=61&descSize=19" width="100%"/>
 
-### Full-Stack .NET Developer
-
-**Backend-focused · Building production-oriented web applications**
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat\&logo=linkedin\&logoColor=white)](https://linkedin.com/in/mustafa-mohamed-anwar)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-111111?style=flat\&logo=vercel\&logoColor=white)](https://mustafa-mohamed-anwar.vercel.app)
-[![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=flat\&logo=gmail\&logoColor=white)](mailto:mustafamohamedanwar1@gmail.com)
+<a href="https://readme-typing-svg.demolab.com/">
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=19&duration=2800&pause=1200&color=58A6FF&center=true&vCenter=true&width=700&height=42&lines=Backend-focused+Full-Stack+Developer;Building+real-world+.NET+applications;Architecture+%7C+Security+%7C+Testing+%7C+Performance" alt="Typing SVG"/>
+</a>
 
 </div>
 
----
-
-## About Me
-
-I am a **fourth-year Information Technology Management student at Port Said University**, with a **3.4 / 4.0 GPA (Very Good)**.
-
-I started programming with C++ and problem solving, then explored Python, Node.js, React, and Next.js before specializing in **C# and .NET**.
-
-Today, I focus primarily on **backend development with ASP.NET Core**, while continuing to build full-stack applications using modern frontend frameworks.
-
-I am particularly interested in building systems that go beyond basic CRUD — systems with clear architecture, secure authentication, data consistency, testing, caching, and deployment workflows.
-
----
-
-## What I Build
-
-I prefer using GitHub as a record of **what I actually built**, not just a list of technologies.
-
-Across my projects, I have worked on:
-
-* backend systems with clear separation of domain, application, infrastructure, and API concerns
-* authentication flows using access/refresh tokens, secure cookies, OAuth, roles, and policies
-* transactional business workflows such as credit-based advertising and inventory operations
-* automated testing across architectural boundaries
-* caching strategies that account for changing underlying data
-* CI/CD workflows and cloud-oriented infrastructure
-* full-stack applications where the frontend is built around the API rather than tightly coupled to it
-
----
-
-## Featured Projects
-
-### ⚡ ElectroShop — Enterprise E-Commerce Backend
-
-**A production-oriented e-commerce backend for electronics retail, currently under active development.**
-
-[![Repository](https://img.shields.io/badge/Backend-Repository-181717?style=flat\&logo=github\&logoColor=white)](https://github.com/Darkness00132/EcommerceApi)
-[![Frontend](https://img.shields.io/badge/Angular-Frontend-DD0031?style=flat\&logo=angular\&logoColor=white)](https://github.com/Darkness00132/ecommerce-ui)
-
-The main goal of this project is not simply implementing an online store, but designing the backend so it can evolve as the system grows.
-
-#### Engineering work
-
-* **Structured the backend around architectural boundaries**, keeping the domain isolated while organizing application code around business features and use cases.
-* **Separated commands and queries** so write operations can enforce business rules while read operations can be optimized independently.
-* **Built domain-focused business logic** for carts, orders, discounts, inventory, payments, procurement, and reviews.
-* **Designed inventory workflows with concurrent checkout scenarios in mind**, including stock validation and reservation-related rules intended to prevent overselling.
-* **Added hybrid caching with explicit invalidation on data changes**, rather than relying only on cache expiration.
-* **Implemented secure authentication flows** with JWT access tokens, refresh sessions, HttpOnly cookies for web refresh tokens, roles, and authorization policies.
-* **Separated infrastructure concerns behind application contracts**, allowing integrations such as storage and external services to be replaced without changing business logic.
-* **Built automated tests across architectural boundaries** with separate test projects for the **Domain, Application, and Infrastructure** layers.
-* **Kept domain tests independent from databases and external infrastructure**, while using infrastructure-level tests where integration behavior actually matters.
-* **Added GitHub Actions workflows** to automate build and test verification.
-* **Designed the system for cloud deployment**, including Azure-oriented storage and database infrastructure.
-* **Documented the domain model and requirements** alongside the implementation instead of treating the database as an afterthought.
-
-> The repository is intentionally public so the implementation can be reviewed, discussed, and improved through future contributions.
-
----
-
-### 🏠 Aqark — Real Estate Marketplace
-
-**A full-stack Arabic real estate marketplace for brokers and property owners.**
-
-[![Frontend](https://img.shields.io/badge/Frontend-Next.js-000000?style=flat\&logo=next.js\&logoColor=white)](https://github.com/Darkness00132/AqarkV2-frontend)
-[![Backend](https://img.shields.io/badge/Backend-ASP.NET%20Core-512BD4?style=flat\&logo=dotnet\&logoColor=white)](https://github.com/Darkness00132/AqarkV2_Backend)
-[![Live Demo](https://img.shields.io/badge/Live-Demo-000000?style=flat\&logo=vercel\&logoColor=white)](https://aqark.vercel.app)
-
-The platform is designed around a broker-driven marketplace where users can publish property advertisements, discover listings, manage their profiles, and interact with reviews.
-
-#### What I built
-
-* **Designed a multi-criteria property filtering system** covering location, listing type, property type, price range, rooms, bathrooms, space, and sorting.
-* **Implemented a credit-based advertising model**, where publishing and certain advertisement changes consume credits based on business rules.
-* **Made critical advertisement operations transactional**, so operations such as image upload, credit deduction, and ad creation can roll back together when something fails.
-* **Added failure cleanup for uploaded files** so external storage does not accumulate orphaned media after failed operations.
-* **Implemented SEO-friendly Arabic slugs** instead of exposing database IDs in property URLs.
-* **Built authentication with JWT, refresh tokens, Google OAuth, and role-based authorization.**
-* **Added pagination, reviews, broker profiles, and image-based listing workflows.**
-* **Built the frontend with Next.js and TypeScript** around an API-driven architecture with validation and reusable client-side logic.
-* **Designed the frontend as an Arabic RTL experience** with property-focused search and filtering.
-
-**Payment integration with Paymob: in progress.**
-
----
-
-### 📦 Inventory Management System
-
-**An ASP.NET Core MVC application for managing inventory operations from purchasing to sales.**
-
-[![Repository](https://img.shields.io/badge/Repository-181717?style=flat\&logo=github\&logoColor=white)](https://github.com/Darkness00132/InverntoryManagement)
-[![Live Demo](https://img.shields.io/badge/Live-Demo-1F6FEB?style=flat\&logo=google-chrome\&logoColor=white)](https://inventory-management.runasp.net/)
-
-This project focuses on implementing a complete internal business application rather than only CRUD screens.
-
-#### What I built
-
-* **Implemented the complete inventory workflow** covering products, categories, suppliers, purchases, and sales.
-* **Added automatic stock deduction** when sales are recorded.
-* **Implemented reorder thresholds and low-stock reporting** to make inventory state visible to users.
-* **Built dashboards and reports** for inventory value, sales revenue, purchasing history, category distribution, and low-stock items.
-* **Added role-based access control** with separate Admin and Employee capabilities.
-* **Implemented account management and locking** through ASP.NET Core Identity.
-* **Organized ViewModels by business feature** instead of keeping one large shared model layer.
-
----
-
-## Development Approach
-
-I care more about **how a system is designed** than how many technologies are written in its README.
-
-Some examples from my work:
-
-```text
-Business Rules
-     ↓
-Domain
-     ↓
-Application / Use Cases
-     ↓
-Infrastructure
-     ↓
-API / Presentation
-```
-
-For larger projects, I combine this dependency direction with **feature-based organization**, so a business capability owns the code needed for its use cases instead of scattering related logic across unrelated folders.
-
-I also try to make engineering decisions based on the problem:
-
-* use transactions where multiple operations must succeed or fail together
-* isolate domain behavior from infrastructure concerns
-* project only the data a client actually needs
-* invalidate cached data when the underlying state changes
-* test business behavior without requiring external systems
-* keep external integrations replaceable
-* treat authentication and authorization as part of system design rather than controller-level checks
-
----
-
-## Technologies I Work With
-
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=cs,dotnet,postgres,sqlserver,redis,angular,react,nextjs,ts,js,html,css,docker,git,github,azure&perline=8" />
+  <a href="https://linkedin.com/in/mustafa-mohamed-anwar" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
+  <a href="mailto:mustafamohamedanwar1@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+  </a>
+  <a href="https://mustafa-mohamed-anwar.vercel.app" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"/>
+  </a>
+  <a href="https://github.com/Darkness00132" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  </a>
 </p>
 
-My strongest area is **ASP.NET Core backend development**, while I use **Next.js / React and Angular** to build and integrate frontend applications.
+## 👋 About Me
+
+I'm a fourth-year **Information Technology Management** student at **Port Said University**, currently focusing on **backend development with C# and ASP.NET Core** while continuing to build full-stack applications.
+
+My path started with programming fundamentals and problem solving, then moved through Python, Node.js, React, and Next.js before I chose **.NET as my main backend ecosystem**.
+
+That shift changed what I wanted from my projects. Instead of only building applications that work, I became more interested in **how they behave under real requirements**:
+
+* keeping business rules separate from infrastructure
+* designing authentication and authorization deliberately
+* handling data consistency and transactional operations
+* testing behavior without coupling tests to implementation details
+* thinking about caching and performance before problems appear
+* making external services replaceable instead of hard-wired into the application
+
+Most of what you see in my repositories comes from trying to solve those problems in actual projects.
 
 ---
 
-## Training
+## 🛠️ What I Do
 
-**ITI — Full-Stack .NET Training**
-144 hours · completed
-Covered C#, OOP, SQL fundamentals, MVC, ERD, AI prompting, and freelancing.
+### Backend
 
-**DEPI — Full-Stack .NET Web Developer**
-6-month training · ongoing
-Focused on deeper .NET development alongside software engineering practices, testing, Docker, Web APIs, MVC, and freelancing/coaching.
+I mainly build APIs and business applications with **ASP.NET Core**, with a strong focus on the application and domain layers.
+
+I use patterns such as **CQRS and Vertical Slice Architecture** when they make the use cases easier to evolve, while keeping the dependency direction and business rules clear.
+
+I'm particularly interested in problems around:
+
+**authentication & authorization · transactional workflows · inventory · caching · data access · validation · exception handling · API design**
+
+### Testing
+
+Testing is part of how I develop, not something added at the end.
+
+In my main e-commerce project, I separated tests according to architectural boundaries:
+
+* **Domain tests** run without database or infrastructure dependencies.
+* **Application tests** focus on application behavior and use-case logic.
+* **Infrastructure tests** cover integration behavior where external dependencies actually matter.
+
+The project uses **xUnit, Moq, FluentAssertions**, and integration testing rather than trying to unit-test every implementation detail.
+
+### Performance & Reliability
+
+I try to solve performance and reliability problems at the design level.
+
+For example, in ElectroShop I implemented **hybrid caching with explicit invalidation when underlying data changes**, rather than treating expiration as the only cache strategy.
+
+I also design DTOs and projections around **the data the client actually needs**, instead of returning entire entities by default.
+
+### Security
+
+My projects include practical security concerns such as:
+
+**JWT access/refresh authentication · secure HttpOnly cookies · role-based authorization · CORS · rate limiting · account protection**
+
+The goal is not simply to "add authentication", but to make the authentication model fit the client and application flow.
+
+### Full-Stack
+
+Although backend is where I spend most of my time, I build the frontend needed to complete my applications.
+
+I've worked with **Next.js, React, TypeScript, and Angular**, especially when integrating a frontend with APIs I designed myself.
 
 ---
 
-## Education
+## 🚀 Main Projects
 
-**Port Said University**
-B.Sc. in Information Technology Management
-Expected Graduation: **2027**
-GPA: **3.4 / 4.0 — Very Good**
+### ⚡ ElectroShop
+
+[![Backend](https://img.shields.io/badge/Backend-Repository-181717?style=flat\&logo=github\&logoColor=white)](https://github.com/Darkness00132/EcommerceApi)
+[![Frontend](https://img.shields.io/badge/Frontend-Repository-181717?style=flat\&logo=github\&logoColor=white)](https://github.com/Darkness00132/ecommerce-ui)
+
+An enterprise-style e-commerce backend for electronics, currently under active development.
+
+The project covers much more than products and orders. It includes identity, catalog, carts, checkout, payments, inventory, procurement, reviews, promotions, and media handling.
+
+What makes it important to me is the engineering behind it:
+
+* Clean Architecture with domain/application/infrastructure separation
+* CQRS and Vertical Slice organization
+* hybrid caching with change-based invalidation
+* inventory workflows designed around concurrent operations
+* secure web and native authentication flows
+* separate Domain, Application, and Infrastructure test projects
+* GitHub Actions CI
+* infrastructure contracts for replaceable external services
+* Azure Blob Storage as the production storage target
 
 ---
 
-## Find Me
+### 🏠 Aqark
+
+[![Backend](https://img.shields.io/badge/Backend-Repository-181717?style=flat\&logo=github\&logoColor=white)](https://github.com/Darkness00132/AqarkV2_Backend)
+[![Frontend](https://img.shields.io/badge/Frontend-Repository-181717?style=flat\&logo=github\&logoColor=white)](https://github.com/Darkness00132/AqarkV2-frontend)
+[![Live](https://img.shields.io/badge/Live-Demo-000000?style=flat\&logo=vercel\&logoColor=white)](https://aqark.vercel.app)
+
+A full-stack Arabic real-estate marketplace built for brokers and property owners.
+
+The project is centered around property discovery, and one of the larger pieces I implemented was a **multi-criteria filtering system** supporting location, listing type, property type, rooms, bathrooms, price, space, and sorting.
+
+Other work includes:
+
+* SEO-friendly property URLs using slugs
+* JWT and Google OAuth authentication
+* role-based authorization
+* transactional credit-based advertising
+* property images and broker profiles
+* reviews and pagination
+* Arabic RTL frontend built with Next.js and TypeScript
+
+**Paymob payment integration is currently in progress.**
+
+---
+
+## 🔭 Currently Building
+
+I'm continuing work on both **ElectroShop** and **Aqark**, while deepening my backend engineering skills through the ongoing **DEPI Full-Stack .NET Web Developer** program.
+
+My current focus is less about collecting technologies and more about getting better at:
+
+**designing systems · writing testable code · handling real business rules · understanding trade-offs · building applications that can evolve**
+
+---
+
+## 🧰 Stack
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=cs,dotnet,sqlserver,postgres,redis,nextjs,react,angular,ts,docker,git,github,azure&perline=7" />
+</p>
+
+---
 
 <div align="center">
 
-[![GitHub](https://img.shields.io/badge/GitHub-Darkness00132-181717?style=flat\&logo=github\&logoColor=white)](https://github.com/Darkness00132)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Mustafa%20Mohamed%20Anwar-0A66C2?style=flat\&logo=linkedin\&logoColor=white)](https://linkedin.com/in/mustafa-mohamed-anwar)
-[![Portfolio](https://img.shields.io/badge/Portfolio-mustafa--mohamed--anwar.vercel.app-111111?style=flat\&logo=vercel\&logoColor=white)](https://mustafa-mohamed-anwar.vercel.app)
-[![Email](https://img.shields.io/badge/Email-mustafamohamedanwar1%40gmail.com-EA4335?style=flat\&logo=gmail\&logoColor=white)](mailto:mustafamohamedanwar1@gmail.com)
+### Thanks for stopping by.
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer&animation=fadeIn" width="100%"/>
 
 </div>
